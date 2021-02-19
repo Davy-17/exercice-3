@@ -49,6 +49,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 
 --------------------------------------------------------------*/
 /*couleur menu*/
+/*couleur site-title*/
 /*--------------------------------------------------------------
 # Generic
 --------------------------------------------------------------*/
@@ -558,6 +559,26 @@ a:hover, a:active {
   outline: 0;
 }
 
+.site-title a {
+  color: #2b2c28;
+}
+
+.site-title a:visited {
+  color: #005543;
+}
+
+.site-title a:hover, .site-title a:focus, .site-title a:active {
+  color: #3d8a83;
+}
+
+.site-title a:focus {
+  outline: thin dotted;
+}
+
+.site-title a:hover, .site-title a:active {
+  outline: 0;
+}
+
 /* Forms
 --------------------------------------------- */
 button,
@@ -662,7 +683,7 @@ textarea {
 	#primary .site-main (section principale de la page)
 	#colophon .site-footer
 	*/
-.site-branding, #primary, #colophon {
+.site-branding, #primary, #colophon, .menu-toggle {
   margin-left: 3rem;
 }
 
@@ -674,6 +695,10 @@ textarea {
 .main-navigation {
   display: block;
   width: 100%;
+  margin-top: 1rem;
+  background-color: black;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .main-navigation ul {
@@ -682,11 +707,11 @@ textarea {
   margin: 0;
   padding-left: 0;
   background-color: black;
+  text-align: center;
 }
 
 .main-navigation ul ul {
   box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-  float: left;
   position: absolute;
   top: 100%;
   left: -999em;
@@ -715,6 +740,7 @@ textarea {
 
 .main-navigation li {
   position: relative;
+  padding: 1rem;
 }
 
 .main-navigation a {
@@ -722,7 +748,9 @@ textarea {
   text-decoration: none;
 }
 
-/* Small menu. */
+/*---------------------------
+ Bouton Burger
+ ----------------------------*/
 .menu-toggle {
   padding: 0;
   transition: transform .25s;
@@ -741,7 +769,7 @@ textarea {
 }
 
 .menu-toggle:active {
-  transform: scale(0.99);
+  transform: scale(0.7);
 }
 
 .main-navigation.toggled .menu-toggle {
@@ -753,16 +781,41 @@ textarea {
   display: block;
 }
 
+.accueil ul li {
+  text-align: center;
+  justify-content: space-around;
+}
+
 /* -------------------------------------
 menu tablette
 -----------------------------------
 */
 @media screen and (min-width: 37.5em) {
+  div#primary-menu {
+    padding-left: .5rem;
+    padding-right: .5rem;
+  }
   .menu-toggle {
     display: none;
   }
   .main-navigation ul {
     display: flex;
+    justify-content: space-around;
+  }
+  .main-navigation ul li {
+    padding: 0;
+  }
+  .main-navigation ul li a {
+    font-size: clamp(0.2rem, -0.875rem + 8.333vw, 0.9rem);
+  }
+  .accueil ul {
+    list-style-type: none;
+    font-size: clamp(0.6rem, -0.875rem + 8.333vw, 2rem);
+    margin: 0;
+    padding: 0;
+  }
+  .accueil ul li {
+    text-align: start;
     justify-content: space-around;
   }
 }
@@ -1037,15 +1090,50 @@ body.home::after {
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: #2b2b2b;
-  z-index: -1;
-  clip-path: polygon(100% 61%, 68% 100%, 100% 100%);
   /* @include media-desktop{
         clip-path: polygon(85 0, 100% 0, 100% 100%, 67% 100%);
     }*/
+  /*@include tablet{
+        clip-path: polygon(85 0, 100% 0, 100% 100%, 67% 100%);
+        background-color:rgb(43, 43, 43);
+
+    }*/
+  z-index: -1;
 }
 
-body.home .site-title {
-  font-size: 3rem;
+.site-title {
+  font-family: "Monserrat", monospace;
+  font-weight: bold;
+  font-size: clamp(4rem, -0.875rem + 8.333vw, 7rem);
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.site-title a {
+  text-decoration: none;
+}
+
+.site-description {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: "Monserrat", monospace;
+  font-weight: normal;
+  font-size: clamp(0.6rem, -0.875rem + 8.333vw, 2rem);
+}
+
+.accueil ul {
+  list-style-type: none;
+  font-size: clamp(0.6rem, -0.875rem + 8.333vw, 2rem);
+  margin: 0;
+  padding: 0;
+}
+
+.accueil ul li {
+  justify-content: space-around;
+}
+
+img {
+  display: block;
+  border-radius: 50%;
 }
 /*# sourceMappingURL=style.css.map */
