@@ -1,16 +1,23 @@
 .main-navigation {
 	display: block;
 	width: 100%;
+	margin-top: 1rem;
+	background-color: black;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
 
 	ul {
 		display: none;
 		list-style: none;
 		margin: 0;
 		padding-left: 0;
+		background-color: black;
+		text-align: center;
+		
 
 		ul {
 			box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-			float: left;
+			//float: left;
 			position: absolute;
 			top: 100%;
 			left: -999em;
@@ -51,7 +58,7 @@
 
 	li {
 		position: relative;
-
+		padding: 1rem;
 		&:hover > a,
 		&.focus > a {
 		}
@@ -69,13 +76,61 @@
 	}
 }
 
-/* Small menu. */
+
+
+
+/*---------------------------
+ Bouton Burger
+ ----------------------------*/
+.menu-toggle{
+padding: 0;
+transition: transform .25s;
+transform: rotate(0deg);
+border: 0;
+}
+.menu-toggle:hover,
+.menu-toggle:focus{
+	background: white;
+	}
+	.menu-toggle:focus{
+		outline: 1px solid white;
+		outline-offset: -4px;
+	}
+	.menu-toggle:active{
+		transform: scale(0.70)
+	}
+
+
+
+.main-navigation.toggled .menu-toggle{
+	transform: rotate(90deg);
+}
+
+
 .menu-toggle,
 .main-navigation.toggled ul {
 	display: block;
 }
 
+.accueil{
+
+	ul{
+	   li{
+		   text-align: center;
+		justify-content: space-around;
+		}
+	} 
+}
+/* -------------------------------------
+menu tablette
+-----------------------------------
+*/
 @media screen and (min-width: 37.5em) {
+	div#primary-menu{
+		padding-left: .5rem;
+		padding-right: .5rem;
+	}
+
 
 	.menu-toggle {
 		display: none;
@@ -83,7 +138,30 @@
 
 	.main-navigation ul {
 		display: flex;
+		//position: static;
+		justify-content: space-around;
+		li{
+			padding: 0;
+			a{
+				font-size: clamp(.2rem, #{"-0.875rem + 8.333vw"},.9rem);
+			}
+		}
 	}
+
+	.accueil{
+
+		ul{
+	list-style-type: none;
+	font-size: clamp(.6rem, #{"-0.875rem + 8.333vw"},2rem);
+	margin: 0;
+	padding: 0;
+		   li{
+			   text-align: start;
+			justify-content: space-around;
+			}
+		} 
+	}
+	
 }
 
 .comment-navigation,
@@ -106,4 +184,6 @@
 		text-align: end;
 		flex: 1 0 50%;
 	}
+
 }
+

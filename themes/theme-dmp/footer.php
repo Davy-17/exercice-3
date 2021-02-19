@@ -16,7 +16,7 @@
 			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'theme-dmp' ) ); ?>">
 				<?php
 				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'theme-dmp' ), 'WordPress' );
+				/*printf( esc_html__( 'Proudly powered by %s', 'theme-dmp' ), 'WordPress' );*/
 				?>
 			</a>
 			<span class="sep"> | </span>

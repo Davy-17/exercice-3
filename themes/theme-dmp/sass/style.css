@@ -621,6 +621,12 @@ textarea {
 /*--------------------------------------------------------------
 # Layouts
 --------------------------------------------------------------*/
+.no-sidebar .site {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-areas: "header" "main" "footer";
+}
+
 /*--------------------------------------------------------------
 # Components
 --------------------------------------------------------------*/
@@ -933,5 +939,12 @@ textarea {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 1.5em;
+}
+
+/*######################################
+########################################*/
+/* Accueil*/
+.site {
+  margin: 0 2rem 0;
 }
 /*# sourceMappingURL=style.css.map */
