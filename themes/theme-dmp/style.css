@@ -687,6 +687,10 @@ textarea {
   margin-left: 3rem;
 }
 
+#primary, #colophon {
+  width: 80vw;
+}
+
 /*--------------------------------------------------------------
 # Components
 --------------------------------------------------------------*/
@@ -694,7 +698,7 @@ textarea {
 --------------------------------------------- */
 .main-navigation {
   display: block;
-  width: 100%;
+  width: 100vw;
   margin-top: 1rem;
   background-color: black;
   padding-top: 1rem;
@@ -1066,12 +1070,6 @@ menu tablette
 
 /*######################################
 ########################################*/
-/* Layout
--------------------------------*/
-.site {
-  margin: 0;
-}
-
 /* local
 -------------------------------*/
 body {
@@ -1079,6 +1077,7 @@ body {
   padding: 0;
   background-color: aquamarine;
   font-family: "Montserrat", sans-serif;
+  overflow-x: hidden;
 }
 
 body.home::after {
@@ -1136,4 +1135,36 @@ img {
   display: block;
   border-radius: 50%;
 }
+
+/* carrousel
+-------------------------------*/
+.carrousel {
+  width: 300vw;
+  height: 20vh;
+  display: flex;
+  transform: translateX(0);
+  transition: transform .5s;
+}
+
+.carrousel div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+}
+
+.carrousel div:nth-of-type(1) {
+  background-color: #f52206;
+}
+
+.carrousel div:nth-of-type(2) {
+  background-color: #dac50d;
+}
+
+.carrousel div:nth-of-type(3) {
+  background-color: #260ff7;
+}
+
+/* burger
+-------------------------------*/
 /*# sourceMappingURL=style.css.map */

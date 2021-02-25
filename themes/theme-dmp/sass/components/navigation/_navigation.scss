@@ -1,6 +1,6 @@
 .main-navigation {
 	display: block;
-	width: 100%;
+	width: 100vw;
 	margin-top: 1rem;
 	background-color: black;
 	padding-top: 1rem;
@@ -121,6 +121,7 @@ border: 0;
 		}
 	} 
 }
+
 /* -------------------------------------
 menu tablette
 -----------------------------------
@@ -129,6 +130,7 @@ menu tablette
 	div#primary-menu{
 		padding-left: .5rem;
 		padding-right: .5rem;
+
 	}
 
 
