@@ -1,7 +1,7 @@
 .main-navigation {
 	display: block;
 	width: 99vw;
-	background-color: black;
+	background-color: rgb(44, 44, 44);
 	padding-top: 1rem;
 	padding-bottom: 1rem;
 
@@ -10,7 +10,7 @@
 		list-style: none;
 		margin: 0;
 		padding-left: 0;
-		background-color: black;
+		background-color:  rgb(44, 44, 44);
 		text-align: center;
 		
 
@@ -40,14 +40,14 @@
 				width: 200px;
 
 			}
-
+/*
 			:hover > a,
 			.focus > a {
 			}
 
 			a:hover,
 			a.focus {
-			}
+			}*/
 		}
 
 		li:hover > ul,
@@ -59,21 +59,23 @@
 	li {
 		position: relative;
 		padding: 1rem;
+		/*
 		&:hover > a,
 		&.focus > a {
 		}
+		*/
 	}
 
 	a {
 		display: block;
 		text-decoration: none;
 	}
-
+/*
 	.current_page_item > a,
 	.current-menu-item > a,
 	.current_page_ancestor > a,
 	.current-menu-ancestor > a {
-	}
+	}*/
 }
 
 
@@ -84,27 +86,28 @@
  ----------------------------*/
 .menu-toggle{
 padding: 0;
-transition: transform .25s;
-transform: rotate(0deg);
+//transition: transform .25s;
+//transform: rotate(0deg);
 border: 0;
 }
+/*
 .menu-toggle:hover,
 .menu-toggle:focus{
 	background: white;
-	}
+	}*/
 	.menu-toggle:focus{
-		outline: 1px solid white;
-		outline-offset: -4px;
+		outline: none;
+
 	}
-	.menu-toggle:active{
+	/*.menu-toggle:active{
 		transform: scale(0.70)
-	}
+	}*/
 
 
 
-.main-navigation.toggled .menu-toggle{
+/*.main-navigation.toggled .menu-toggle{
 	transform: rotate(90deg);
-}
+}*/
 
 
 .menu-toggle,

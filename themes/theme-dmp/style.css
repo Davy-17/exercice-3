@@ -588,7 +588,7 @@ input[type="submit"] {
   border: 1px solid;
   border-color: #ccc #ccc #bbb;
   border-radius: 3px;
-  background: #e6e6e6;
+  background: none;
   color: rgba(0, 0, 0, 0.8);
   line-height: 1;
   padding: 0.6em 1em 0.4em;
@@ -699,9 +699,15 @@ textarea {
 .main-navigation {
   display: block;
   width: 99vw;
-  background-color: black;
+  background-color: #2c2c2c;
   padding-top: 1rem;
   padding-bottom: 1rem;
+  /*
+	.current_page_item > a,
+	.current-menu-item > a,
+	.current_page_ancestor > a,
+	.current-menu-ancestor > a {
+	}*/
 }
 
 .main-navigation ul {
@@ -709,7 +715,7 @@ textarea {
   list-style: none;
   margin: 0;
   padding-left: 0;
-  background-color: black;
+  background-color: #2c2c2c;
   text-align: center;
 }
 
@@ -719,6 +725,14 @@ textarea {
   top: 100%;
   left: -999em;
   z-index: 99999;
+  /*
+			:hover > a,
+			.focus > a {
+			}
+
+			a:hover,
+			a.focus {
+			}*/
 }
 
 .main-navigation ul ul ul {
@@ -744,6 +758,11 @@ textarea {
 .main-navigation li {
   position: relative;
   padding: 1rem;
+  /*
+		&:hover > a,
+		&.focus > a {
+		}
+		*/
 }
 
 .main-navigation a {
@@ -756,29 +775,24 @@ textarea {
  ----------------------------*/
 .menu-toggle {
   padding: 0;
-  transition: transform .25s;
-  transform: rotate(0deg);
   border: 0;
 }
 
+/*
 .menu-toggle:hover,
+.menu-toggle:focus{
+	background: white;
+	}*/
 .menu-toggle:focus {
-  background: white;
+  outline: none;
 }
 
-.menu-toggle:focus {
-  outline: 1px solid white;
-  outline-offset: -4px;
-}
-
-.menu-toggle:active {
-  transform: scale(0.7);
-}
-
-.main-navigation.toggled .menu-toggle {
-  transform: rotate(90deg);
-}
-
+/*.menu-toggle:active{
+		transform: scale(0.70)
+	}*/
+/*.main-navigation.toggled .menu-toggle{
+	transform: rotate(90deg);
+}*/
 .menu-toggle,
 .main-navigation.toggled ul {
   display: block;
@@ -1078,7 +1092,7 @@ menu tablette
 body {
   margin: 0;
   padding: 0;
-  background-color: aquamarine;
+  background-color: #00d599;
   font-family: "Montserrat", sans-serif;
   overflow-x: hidden;
 }
@@ -1093,20 +1107,22 @@ body.home::after {
   left: 0;
   right: 0;
   /* @include media-desktop{
-        clip-path: polygon(85 0, 100% 0, 100% 100%, 67% 100%);
-    }*/
-  /*@include tablet{
-        clip-path: polygon(85 0, 100% 0, 100% 100%, 67% 100%);
-        background-color:rgb(43, 43, 43);
-
+        clip-path: polygon(85% 0, 100% 0, 100% 100%, 67% 100%);
     }*/
   z-index: -1;
+}
+
+@media (min-width: 800px) {
+  body.home::after {
+    clip-path: polygon(85% 0, 100% 0, 100% 100%, 77% 100%);
+    background-color: #2b2b2b;
+  }
 }
 
 .site-title {
   font-family: "Monserrat", monospace;
   font-weight: bold;
-  font-size: clamp(4rem, -0.875rem + 8.333vw, 7rem);
+  font-size: clamp(4rem, -0.875rem + 8.333vw, 6rem);
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -1203,7 +1219,6 @@ img {
 -------------------------------*/
 #menu {
   width: 35px;
-  height: 30px;
   cursor: pointer;
 }
 

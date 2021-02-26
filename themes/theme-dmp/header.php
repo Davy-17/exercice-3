@@ -60,7 +60,11 @@
 		</div>
 
 		<nav id="site-navigation" class="main-navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><img src="https://s2.svgbox.net/hero-solid.svg?ic=menu&color=000000" width="32" height="32"></button>
+			<button id="menu" class="menu-toggle" aria-controls="primary-menu" aria-expanded="false" onclick="onClickMenu()">
+        		<div id="barre1" class="barre"></div>
+        		<div id="barre2" class="barre"></div>
+        		<div id="barre3" class="barre"></div>
+    		</button>
 			<?php
 			wp_nav_menu(
 				array(
