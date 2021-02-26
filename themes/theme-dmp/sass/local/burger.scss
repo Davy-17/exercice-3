@@ -1,0 +1,33 @@
+#menu{
+    width: 35px;
+    height: 30px;
+    cursor: pointer;
+
+}
+.barre{
+width: 100%;
+height: 4px;
+background-color: rgb(255, 255, 255);
+border-radius: 10px;
+transition: 0.3s ease;
+}
+#barre1{
+transform: translateY(-4px);
+}
+#barre2{
+    
+}
+#barre3{
+    transform: translateY(4px);
+}
+
+.transformation #barre1{
+    transform: translateY(4px) rotateZ(45deg);
+}
+.transformation #barre2{
+    opacity: 0;
+    transform: translateX(-10px);
+}
+.transformation #barre3{
+    transform: translateY(-4px) rotateZ(-45deg);
+}
