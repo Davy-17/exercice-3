@@ -856,7 +856,7 @@ menu tablette
     display: block;
     position: absolute;
     width: 150px;
-    height: 250px;
+    height: 125px;
   }
   .main-navigation.toggled ul li:hover > ul,
   .main-navigation.toggled ul li.focus > ul,
