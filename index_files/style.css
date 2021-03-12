@@ -850,7 +850,6 @@ menu tablette
   .main-navigation.toggled ul ul,
   .main-navigation ul ul {
     display: none;
-    margin-top: 1rem;
   }
   .main-navigation.toggled ul li:hover ul,
   .main-navigation ul li:hover ul {
