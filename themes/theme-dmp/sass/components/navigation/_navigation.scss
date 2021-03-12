@@ -7,11 +7,13 @@
 
 	ul {
 		display: none;
+		//position: absolute;
+		//width: 100%;
 		list-style: none;
 		margin: 0;
 		padding-left: 0;
 		background-color:  rgb(44, 44, 44);
-		text-align: center;
+		text-align: left;
 		
 
 		ul {
@@ -19,25 +21,25 @@
 			//float: left;
 			position: absolute;
 			top: 100%;
+			transition: left .5s;
 			left: -999em;
 			z-index: 99999;
-
+/*
 			ul {
 				left: -999em;
 				top: 0;
 			}
-
+*/
 			li {
-
-				&:hover > ul,
-				&.focus > ul {
-					display: block;
-					left: auto;
+				a{
+					padding-left: 20px;
+					background-color: rgb(77, 77, 77);
 				}
+
 			}
 
 			a {
-				width: 200px;
+				width: 100%;
 
 			}
 /*
@@ -49,16 +51,17 @@
 			a.focus {
 			}*/
 		}
+		/* Fin du sub menu */
 
-		li:hover > ul,// à modifier
+		li:hover > ul,
 		li.focus > ul {
-			left: auto;
+			left: 0;
+			width: 100%;
 		}
 	}
 
 	li {
 		position: relative;
-		padding: 1rem;
 		/*
 		&:hover > a,
 		&.focus > a {
@@ -69,6 +72,7 @@
 	a {
 		display: block;
 		text-decoration: none;
+		padding: .5rem;
 	}
 /*
 	.current_page_item > a,
@@ -119,13 +123,13 @@ border: 0;
 
 
 			&[href="#"]::after {
-				//position: absolute;
+				position: absolute;
 				content: "\2B9E";
 				width: 100%;
 				height: 100%;
 				top: 25%;
 				bottom: 0%;
-				left: 95%;
+				left: 90%;
 				right: 0;
 
 			}
@@ -133,7 +137,9 @@ border: 0;
 			}
 
 		}
-		li.focus a[href="#"]::after{
+		li.focus a[href="#"]::after,
+		a[href="#"]:hover::after
+		{
 			content: "\2B9F";
 		}
 }
@@ -164,10 +170,29 @@ menu tablette
 		display: none;
 	}
 
+	.main-navigation.toggled ul,
 	.main-navigation ul {
 		display: flex;
-		//position: static;
+		position: static;
 		justify-content: space-around;
+		a[href="#"]::after{
+			display: none;
+		}
+		ul{
+			display: none;
+		}
+		li:hover ul{
+			display: block;
+			position: absolute;
+			width: 150px;
+			height: 250px;
+		}
+		li:hover > ul,
+		li.focus > ul {
+			left: -10%;
+		}
+
+
 		li{
 			padding: 0;
 			a{
