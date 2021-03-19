@@ -699,7 +699,7 @@ textarea {
 --------------------------------------------- */
 .main-navigation {
   display: block;
-  width: 99vw;
+  width: 100vw;
   background-color: #2c2c2c;
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -1171,7 +1171,7 @@ body.home::after {
   z-index: -1;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 600px) {
   body.home::after {
     clip-path: polygon(85% 0, 100% 0, 100% 100%, 77% 100%);
     background-color: #005543;
@@ -1217,7 +1217,7 @@ img {
 }
 
 /*----------------------------------------------
-Grille
+Couleur grille 
 ------------------------------------------------*/
 .cours section:nth-of-type(1) article {
   background: #1b1b1c;
@@ -1244,6 +1244,9 @@ Grille
   background: linear-gradient(52deg, #1b1b1c 0%, red 0%, #702b00 53%, black 53%, #3f3f3f 100%);
 }
 
+/*----------------------------------------------
+Grille 
+------------------------------------------------*/
 .cours {
   display: flex;
   flex-direction: column;
@@ -1265,8 +1268,8 @@ Grille
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  border-radius: 10%;
-  width: 29%;
+  border-radius: 30px;
+  width: 90%;
   margin: 1%;
 }
 
@@ -1285,18 +1288,18 @@ Grille
 }
 
 .cours section article a:hover {
-  color: #9ecc98;
+  color: white;
 }
 
-@media (min-width: 800px) {
-  .cours section article article {
+@media (min-width: 600px) {
+  .cours section article {
     width: 45%;
     margin: 1%;
   }
 }
 
 @media (min-width: 1200px) {
-  .cours section article article {
+  .cours section article {
     width: 29%;
     margin: 1%;
   }

@@ -68,7 +68,7 @@ img{
         border-radius: 50%;
     }
 /*----------------------------------------------
-Grille
+Couleur grille 
 ------------------------------------------------*/
 .cours{
     $degre:52deg;
@@ -104,7 +104,9 @@ Grille
     }
 
 }
-
+/*----------------------------------------------
+Grille 
+------------------------------------------------*/
 
 
 .cours{
@@ -123,8 +125,8 @@ Grille
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
-        border-radius: 10%;
-        width: 29%;
+        border-radius: 30px;
+        width: 90%;
         margin: 1%;
 
         p{
@@ -139,8 +141,9 @@ Grille
             text-decoration: none;
             text-align: center;
             &:hover{
-                color: rgb(158, 204, 152);
+                color: rgb(255, 255, 255);
             }
+        }
         }
         @include tablet {
             article{
@@ -154,10 +157,7 @@ Grille
                 margin: 1%;
             }
         }
+        
 
-
-
-        }
-        }
-
+    }
 }
