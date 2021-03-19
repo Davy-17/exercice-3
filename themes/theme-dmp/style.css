@@ -1295,6 +1295,8 @@ Grille
 
 .cours section article a:hover {
   color: white;
+  transform: scale(0.9);
+  transition: .9s;
 }
 
 @media (min-width: 600px) {
@@ -1367,11 +1369,21 @@ bouton du carrousel
 
 .conteneur-bouton div:hover {
   background-color: #5c5c5c;
+  animation: tourneBouton .5s forwards;
 }
 
 .conteneur-bouton div:active {
   background-color: white;
   color: black;
+}
+
+@keyframes tourneBouton {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 /* burger

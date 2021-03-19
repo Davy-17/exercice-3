@@ -142,6 +142,8 @@ Grille
             text-align: center;
             &:hover{
                 color: rgb(255, 255, 255);
+                transform: scale(.9);
+                transition: .9s;
             }
         }
         }

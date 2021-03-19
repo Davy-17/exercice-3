@@ -45,10 +45,20 @@ bouton du carrousel
         border-radius: 50%;
         &:hover{
             background-color: rgb(92, 92, 92);
+            animation: tourneBouton .5s forwards;
         }
         &:active{
             background-color: rgb(255, 255, 255);
             color: black;
         }
+        @keyframes tourneBouton {
+            0%{
+                transform: rotate(0deg);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+
     }
 }
