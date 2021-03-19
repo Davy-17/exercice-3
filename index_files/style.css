@@ -50,6 +50,13 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 --------------------------------------------------------------*/
 /*couleur menu*/
 /*couleur site-title*/
+/*couleur article de la grille*/
+/*------------------------------------
+media query pour afficher une version tablette
+--------------------------------------*/
+/*------------------------------------
+media query pour afficher une version ordinateur
+--------------------------------------*/
 /*--------------------------------------------------------------
 # Generic
 --------------------------------------------------------------*/
@@ -698,7 +705,7 @@ textarea {
 --------------------------------------------- */
 .main-navigation {
   display: block;
-  width: 99vw;
+  width: 100vw;
   background-color: #2c2c2c;
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -1170,7 +1177,7 @@ body.home::after {
   z-index: -1;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 600px) {
   body.home::after {
     clip-path: polygon(85% 0, 100% 0, 100% 100%, 77% 100%);
     background-color: #005543;
@@ -1215,6 +1222,37 @@ img {
   border-radius: 50%;
 }
 
+/*----------------------------------------------
+Couleur grille 
+------------------------------------------------*/
+.cours section:nth-of-type(1) article {
+  background: #1b1b1c;
+  background: linear-gradient(52deg, #1b1b1c 0%, #1ad2cf 0%, #003270 53%, black 53%, #3f3f3f 100%);
+}
+
+.cours section:nth-of-type(2) article {
+  background: #1b1b1c;
+  background: linear-gradient(52deg, #1b1b1c 0%, #8a2bcf 0%, #1f0070 53%, black 53%, #3f3f3f 100%);
+}
+
+.cours section:nth-of-type(3) article {
+  background: #1b1b1c;
+  background: linear-gradient(52deg, #1b1b1c 0%, #d21ac0 0%, #700024 53%, black 53%, #3f3f3f 100%);
+}
+
+.cours section:nth-of-type(4) article {
+  background: #1b1b1c;
+  background: linear-gradient(52deg, #1b1b1c 0%, #cfcd2b 0%, #703300 53%, black 53%, #3f3f3f 100%);
+}
+
+.cours section:nth-of-type(5) article {
+  background: #1b1b1c;
+  background: linear-gradient(52deg, #1b1b1c 0%, red 0%, #702b00 53%, black 53%, #3f3f3f 100%);
+}
+
+/*----------------------------------------------
+Grille 
+------------------------------------------------*/
 .cours {
   display: flex;
   flex-direction: column;
@@ -1236,11 +1274,9 @@ img {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  border-radius: 10%;
-  width: 29%;
+  border-radius: 30px;
+  width: 90%;
   margin: 1%;
-  background: #002024;
-  background: linear-gradient(52deg, #002024 0%, #096279 48%, #00d4ff 100%);
 }
 
 .cours section article p {
@@ -1258,18 +1294,20 @@ img {
 }
 
 .cours section article a:hover {
-  color: #9ecc98;
+  color: white;
+  transform: scale(0.9);
+  transition: .9s;
 }
 
-@media (min-width: 800px) {
-  .cours section article article {
+@media (min-width: 600px) {
+  .cours section article {
     width: 45%;
     margin: 1%;
   }
 }
 
 @media (min-width: 1200px) {
-  .cours section article article {
+  .cours section article {
     width: 29%;
     margin: 1%;
   }
@@ -1305,6 +1343,9 @@ img {
   color: white;
 }
 
+/*------------------------------------
+bouton du carrousel
+--------------------------------------*/
 .conteneur-bouton {
   width: 100vw;
   margin-top: 1rem;
@@ -1328,6 +1369,7 @@ img {
 
 .conteneur-bouton div:hover {
   background-color: #5c5c5c;
+  animation: tourneBouton .5s forwards;
 }
 
 .conteneur-bouton div:active {
@@ -1335,14 +1377,26 @@ img {
   color: black;
 }
 
+@keyframes tourneBouton {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 /* burger
 -------------------------------*/
 #menu {
   width: 35px;
   cursor: pointer;
-  margin-left: 1rem;
+  margin-left: 3.5rem;
 }
 
+/*------------------------------------
+les barres du menu burger
+--------------------------------------*/
 .barre {
   width: 100%;
   height: 4px;
@@ -1359,6 +1413,9 @@ img {
   transform: translateY(4px);
 }
 
+/*------------------------------------
+les animations des barres du menu burger
+--------------------------------------*/
 .transformation #barre1 {
   transform: translateY(4px) rotateZ(45deg);
 }

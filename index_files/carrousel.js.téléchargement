@@ -1,3 +1,7 @@
+/*------------------------------------
+fonction pour animer le carroussel
+--------------------------------------*/
+
 (function(){
 let bout1 = document.getElementById('un')
 let bout2 = document.getElementById('deux')
