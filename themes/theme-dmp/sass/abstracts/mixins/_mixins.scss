@@ -9,13 +9,17 @@
 @mixin column-width($numberColumns: 3) {
 	width: map-get($columns, $numberColumns) - ( ( $columns__margin * ( $numberColumns - 1 ) ) / $numberColumns );
 }
-
+/*------------------------------------
+media query pour afficher une version tablette
+--------------------------------------*/
 @mixin tablet{
 	@media (min-width : 600px){
 		@content;
 	}
 }
-
+/*------------------------------------
+media query pour afficher une version ordinateur
+--------------------------------------*/
 @mixin desktop{
 	@media (min-width : 1200px){
 		@content;

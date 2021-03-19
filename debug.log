@@ -199,3 +199,14 @@ Stack trace:
 #10 {main}
   thrown in C:\xampp\htdocs\4w4\wp-content\themes\theme-dmp\functions.php on line 202
 [15-Mar-2021 14:36:29 UTC] PHP Parse error:  syntax error, unexpected '" - "' (T_CONSTANT_ENCAPSED_STRING), expecting ',' or ';' in C:\xampp\htdocs\4w4\wp-content\themes\theme-dmp\front-page.php on line 40
+[19-Mar-2021 19:35:56 UTC] PHP Notice:  Undefined variable: titrePartiel in C:\xampp\htdocs\4w4\wp-content\themes\theme-dmp\header.php on line 51
+[19-Mar-2021 19:39:44 UTC] PHP Parse error:  syntax error, unexpected 'endif' (T_ENDIF), expecting end of file in C:\xampp\htdocs\4w4\wp-content\themes\theme-dmp\header.php on line 90
+[19-Mar-2021 19:41:12 UTC] PHP Notice:  Undefined variable: sigle in C:\xampp\htdocs\4w4\wp-content\themes\theme-dmp\header.php on line 51
+[19-Mar-2021 19:41:12 UTC] PHP Notice:  Undefined variable: typeCours in C:\xampp\htdocs\4w4\wp-content\themes\theme-dmp\header.php on line 51
+[19-Mar-2021 19:41:12 UTC] PHP Notice:  Undefined variable: nbHeure in C:\xampp\htdocs\4w4\wp-content\themes\theme-dmp\header.php on line 51
+[19-Mar-2021 19:41:12 UTC] PHP Notice:  Undefined variable: titrePartiel in C:\xampp\htdocs\4w4\wp-content\themes\theme-dmp\header.php on line 52
+[19-Mar-2021 19:41:12 UTC] PHP Notice:  Undefined variable: session in C:\xampp\htdocs\4w4\wp-content\themes\theme-dmp\header.php on line 53
+[19-Mar-2021 19:45:42 UTC] PHP Notice:  Undefined variable: titrePartiel in C:\xampp\htdocs\4w4\wp-content\themes\theme-dmp\header.php on line 51
+[19-Mar-2021 19:50:04 UTC] PHP Notice:  Undefined variable: titrePartiel in C:\xampp\htdocs\4w4\wp-content\themes\theme-dmp\header.php on line 52
+[19-Mar-2021 19:50:47 UTC] PHP Parse error:  syntax error, unexpected end of file, expecting elseif (T_ELSEIF) or else (T_ELSE) or endif (T_ENDIF) in C:\xampp\htdocs\4w4\wp-content\themes\theme-dmp\header.php on line 96
+[19-Mar-2021 19:52:28 UTC] PHP Parse error:  syntax error, unexpected 'endif' (T_ENDIF) in C:\xampp\htdocs\4w4\wp-content\themes\theme-dmp\header.php on line 79

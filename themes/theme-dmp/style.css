@@ -51,6 +51,12 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 /*couleur menu*/
 /*couleur site-title*/
 /*couleur article de la grille*/
+/*------------------------------------
+media query pour afficher une version tablette
+--------------------------------------*/
+/*------------------------------------
+media query pour afficher une version ordinateur
+--------------------------------------*/
 /*--------------------------------------------------------------
 # Generic
 --------------------------------------------------------------*/
@@ -1335,6 +1341,9 @@ Grille
   color: white;
 }
 
+/*------------------------------------
+bouton du carrousel
+--------------------------------------*/
 .conteneur-bouton {
   width: 100vw;
   margin-top: 1rem;
@@ -1373,6 +1382,9 @@ Grille
   margin-left: 3.5rem;
 }
 
+/*------------------------------------
+les barres du menu burger
+--------------------------------------*/
 .barre {
   width: 100%;
   height: 4px;
@@ -1389,6 +1401,9 @@ Grille
   transform: translateY(4px);
 }
 
+/*------------------------------------
+les animations des barres du menu burger
+--------------------------------------*/
 .transformation #barre1 {
   transform: translateY(4px) rotateZ(45deg);
 }

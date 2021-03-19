@@ -38,10 +38,11 @@ get_header();
                 
 					if ($typeCours != $precedent): 
 						if( "XXXXXX" !=$precedent) :?>
-						</section>
-						<?php endif ?>
+
+							</section>
+					<?php endif ?>
 						<h2><?php echo $typeCours ?></h2>
-						<section>
+							<section>
 						<?php endif ?>
 						
 
@@ -55,11 +56,11 @@ get_header();
 
 
 
-                <?php
-				$precedent = $typeCours;
-				endwhile;?>
+            <?php
+			$precedent = $typeCours;
+			endwhile;?>
 				</section>
-				<?php endif; ?>
+		<?php endif; ?>
 
 	</main><!-- #main -->
 

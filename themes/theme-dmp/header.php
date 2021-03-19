@@ -46,19 +46,22 @@
 		</div><!-- .site-branding -->
 		<?php
 			if(is_front_page()) : ?>
-
+<!-- section pour le carrousel -->
 		<section class="carrousel">
 			<div>1</div>
 			<div>2</div>
 			<div>3</div>
 		</section>
+		<!-- Fin section pour le carrousel -->
 		<?php endif ?>
+		<!-- bouton du carrousel -->
 		<div class="conteneur-bouton">
 			<div id="un">1</div>
 			<div id="deux">2</div>
 			<div id="trois">3</div>
 		</div>
-
+<!-- fin bouton du carrousel -->
+<!-- bouton burger -->
 		<nav id="site-navigation" class="main-navigation">
 			<button id="menu" class="menu-toggle" aria-controls="primary-menu" aria-expanded="false" onclick="onClickMenu()">
         		<div id="barre1" class="barre"></div>
@@ -74,4 +77,5 @@
 			);
 			?>
 		</nav><!-- #site-navigation -->
+		<!-- Fin bouton burger -->
 	</header><!-- #masthead -->
