@@ -1162,21 +1162,6 @@ body {
 }
 
 /*------------------------
-Animation couleur body
--------------------------*/
-@keyframes animFond {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
-/*------------------------
 Clip-path body
 -------------------------*/
 .page-title {
@@ -1404,15 +1389,6 @@ bouton du carrousel
   color: black;
 }
 
-@keyframes tourneBouton {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
 /* burger
 -------------------------------*/
 #menu {
@@ -1454,5 +1430,34 @@ les animations des barres du menu burger
 
 .transformation #barre3 {
   transform: translateY(-4px) rotateZ(-45deg);
+}
+
+/* animation
+-------------------------------*/
+/*------------------------
+Animation couleur body
+-------------------------*/
+@keyframes animFond {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/*------------------------
+Animation bouton carroussel
+-------------------------*/
+@keyframes tourneBouton {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 /*# sourceMappingURL=style.css.map */
