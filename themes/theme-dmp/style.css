@@ -50,7 +50,8 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 --------------------------------------------------------------*/
 /*couleur menu*/
 /*couleur site-title*/
-/*couleur article de la grille*/
+/*partie de couleur des articles de la grille*/
+/*couleur body changeante*/
 /*------------------------------------
 media query pour afficher une version tablette
 --------------------------------------*/
@@ -1166,6 +1167,7 @@ Clip-path body
 -------------------------*/
 .page-title {
   margin-left: 3.5rem;
+  font-size: clamp(0.6rem, -0.875rem + 8.333vw, 2rem);
 }
 
 body.home::after {
@@ -1272,6 +1274,7 @@ Grille
 
 .cours h2 {
   text-align: center;
+  font-size: clamp(0.6rem, -0.875rem + 8.333vw, 1.5rem);
 }
 
 .cours section {
@@ -1294,12 +1297,12 @@ Grille
 .cours section article p {
   color: white;
   margin: .4rem;
-  font-size: 1rem;
+  font-size: clamp(0.6rem, -0.875rem + 8.333vw, 1rem);
 }
 
 .cours section article a {
   color: #cfdd54;
-  font-size: 1.5rem;
+  font-size: clamp(0.6rem, -0.875rem + 8.333vw, 1.5rem);
   font-weight: bold;
   text-decoration: none;
   text-align: center;
@@ -1377,6 +1380,7 @@ bouton du carrousel
   color: white;
   background-color: #332d2d;
   border-radius: 50%;
+  font-size: clamp(0.6rem, -0.875rem + 8.333vw, 1.2rem);
 }
 
 .conteneur-bouton div:hover {

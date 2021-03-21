@@ -4,7 +4,7 @@ body{
     //background-color: #00d599;
     font-family: $font__main;
     overflow-x: hidden;
-    background: linear-gradient(-45deg, #77e786, #3ce759, #23d5d5, #18f5f5);
+    background: linear-gradient(-45deg, $color__body-vertpale, $color__body-vert, $color__body-bleu, $color__body-bleupale);
     background-size: 400% 400%;
     animation: animFond 5s ease infinite;
 }
@@ -15,6 +15,7 @@ Clip-path body
 
 .page-title{
     margin-left: 3.5rem;
+    font-size: clamp(.6rem, #{"-0.875rem + 8.333vw"},2rem);
 }
 body.home::after{
 position: absolute;
@@ -88,31 +89,31 @@ Couleur grille
     section:nth-of-type(1){
         article{
             background: $color__article;
-            background: linear-gradient($degre, $color__article 0%, rgba(26,210,207,1) 0%, rgba(0,50,112,1) 53%, rgba(0,0,0,1) 53%, rgba(63,63,63,1) 100%);
+            background: linear-gradient($degre, $color__article 0%, rgba(26,210,207,1) 0%, rgba(0,50,112,1) 53%, $color__article-noir 53%, $color__article-gris 100%);
         }
     }
     section:nth-of-type(2){
         article{
             background: $color__article;
-            background: linear-gradient($degre, $color__article 0%, rgba(138,43,207,1) 0%, rgba(31,0,112,1) 53%, rgba(0,0,0,1) 53%, rgba(63,63,63,1) 100%);
+            background: linear-gradient($degre, $color__article 0%, rgba(138,43,207,1) 0%, rgba(31,0,112,1) 53%, $color__article-noir 53%, $color__article-gris 100%);
         }
     }
     section:nth-of-type(3){
         article{
             background: $color__article;
-            background: linear-gradient($degre, $color__article 0%, rgba(210,26,192,1) 0%, rgba(112,0,36,1) 53%, rgba(0,0,0,1) 53%, rgba(63,63,63,1) 100%);
+            background: linear-gradient($degre, $color__article 0%, rgba(210,26,192,1) 0%, rgba(112,0,36,1) 53%, $color__article-noir 53%, $color__article-gris 100%);
         }
     }
     section:nth-of-type(4){
         article{
             background: $color__article;
-            background: linear-gradient($degre, $color__article 0%, rgba(207,205,43,1) 0%, rgba(112,51,0,1) 53%, rgba(0,0,0,1) 53%, rgba(63,63,63,1) 100%);
+            background: linear-gradient($degre, $color__article 0%, rgba(207,205,43,1) 0%, rgba(112,51,0,1) 53%, $color__article-noir 53%, $color__article-gris 100%);
         }
     }
     section:nth-of-type(5){
         article{
             background: $color__article;
-            background: linear-gradient($degre, $color__article 0%, rgba(255,0,0,1) 0%, rgba(112,43,0,1) 53%, rgba(0,0,0,1) 53%, rgba(63,63,63,1) 100%);
+            background: linear-gradient($degre, $color__article 0%, rgba(255,0,0,1) 0%, rgba(112,43,0,1) 53%, $color__article-noir 53%, $color__article-gris 100%);
         }
     }
 
@@ -125,6 +126,7 @@ Grille
 .cours{
     h2{
         text-align: center;
+        font-size: clamp(.6rem, #{"-0.875rem + 8.333vw"},1.5rem);
     }
     display: flex;
     flex-direction: column;
@@ -145,11 +147,11 @@ Grille
         p{
             color: rgb(255, 255, 255);
             margin: .4rem;
-            font-size: 1rem;
+            font-size: clamp(.6rem, #{"-0.875rem + 8.333vw"},1rem);
         }
         a{
             color: rgb(207, 221, 84);
-            font-size: 1.5rem;//clamp
+            font-size: clamp(.6rem, #{"-0.875rem + 8.333vw"},1.5rem);
             font-weight: bold;
             text-decoration: none;
             text-align: center;
@@ -159,7 +161,8 @@ Grille
                 transition: .9s;
             }
         }
-        }
+    }
+
         @include tablet {
             article{
                 width: 45%;

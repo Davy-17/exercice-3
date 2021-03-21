@@ -48,9 +48,19 @@
 			if(is_front_page()) : ?>
 <!-- section pour le carrousel -->
 		<section class="carrousel">
-			<div>1</div>
-			<div>2</div>
-			<div>3</div>
+		<?php
+			/* Start the Loop */
+            $precedent = "XXXXXX";
+			while ( have_posts() ) :
+				the_post();
+                $titre = get_the_title();
+				$titrePartiel = substr($titre, 8, -6);
+				$typeCours = get_field('type_de_cours');
+				?>
+
+			<div><a href="<?php echo get_permalink() ?>"><?php echo $titrePartiel; ?></a></div>
+            <?php
+			endwhile;?>
 		</section>
 		<!-- Fin section pour le carrousel -->
 		<?php endif ?>

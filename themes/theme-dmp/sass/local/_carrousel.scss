@@ -43,6 +43,7 @@ bouton du carrousel
         color: white;
         background-color: rgb(51, 45, 45);
         border-radius: 50%;
+        font-size: clamp(.6rem, #{"-0.875rem + 8.333vw"},1.2rem);
         &:hover{
             background-color: rgb(92, 92, 92);
             animation: tourneBouton .5s forwards;

@@ -50,7 +50,8 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 --------------------------------------------------------------*/
 /*couleur menu*/
 /*couleur site-title*/
-/*couleur article de la grille*/
+/*partie de couleur des articles de la grille*/
+/*couleur body changeante*/
 /*------------------------------------
 media query pour afficher une version tablette
 --------------------------------------*/
@@ -575,7 +576,8 @@ a:hover, a:active {
 }
 
 .site-title a:hover, .site-title a:focus, .site-title a:active {
-  color: #3d8a83;
+  color: #c5ffcf;
+  transition: .5s;
 }
 
 .site-title a:focus {
@@ -1153,13 +1155,19 @@ menu tablette
 body {
   margin: 0;
   padding: 0;
-  background-color: #00d599;
   font-family: "Montserrat", sans-serif;
   overflow-x: hidden;
+  background: linear-gradient(-45deg, #77e786, #3ce759, #23d5d5, #18f5f5);
+  background-size: 400% 400%;
+  animation: animFond 5s ease infinite;
 }
 
+/*------------------------
+Clip-path body
+-------------------------*/
 .page-title {
   margin-left: 3.5rem;
+  font-size: clamp(0.6rem, -0.875rem + 8.333vw, 2rem);
 }
 
 body.home::after {
@@ -1184,6 +1192,9 @@ body.home::after {
   }
 }
 
+/*------------------------
+Header
+-------------------------*/
 .site-title {
   font-family: "Monserrat", monospace;
   font-weight: bold;
@@ -1206,6 +1217,9 @@ body.home::after {
   font-size: clamp(0.6rem, -0.875rem + 8.333vw, 2rem);
 }
 
+/*------------------------
+Liens
+-------------------------*/
 .accueil ul {
   list-style-type: none;
   font-size: clamp(0.6rem, -0.875rem + 8.333vw, 1.7rem);
@@ -1260,6 +1274,7 @@ Grille
 
 .cours h2 {
   text-align: center;
+  font-size: clamp(0.6rem, -0.875rem + 8.333vw, 1.5rem);
 }
 
 .cours section {
@@ -1282,12 +1297,12 @@ Grille
 .cours section article p {
   color: white;
   margin: .4rem;
-  font-size: 1rem;
+  font-size: clamp(0.6rem, -0.875rem + 8.333vw, 1rem);
 }
 
 .cours section article a {
   color: #cfdd54;
-  font-size: 1.5rem;
+  font-size: clamp(0.6rem, -0.875rem + 8.333vw, 1.5rem);
   font-weight: bold;
   text-decoration: none;
   text-align: center;
@@ -1365,6 +1380,7 @@ bouton du carrousel
   color: white;
   background-color: #332d2d;
   border-radius: 50%;
+  font-size: clamp(0.6rem, -0.875rem + 8.333vw, 1.2rem);
 }
 
 .conteneur-bouton div:hover {
@@ -1375,15 +1391,6 @@ bouton du carrousel
 .conteneur-bouton div:active {
   background-color: white;
   color: black;
-}
-
-@keyframes tourneBouton {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
 }
 
 /* burger
@@ -1427,5 +1434,34 @@ les animations des barres du menu burger
 
 .transformation #barre3 {
   transform: translateY(-4px) rotateZ(-45deg);
+}
+
+/* animation
+-------------------------------*/
+/*------------------------
+Animation couleur body
+-------------------------*/
+@keyframes animFond {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/*------------------------
+Animation bouton carroussel
+-------------------------*/
+@keyframes tourneBouton {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 /*# sourceMappingURL=style.css.map */
