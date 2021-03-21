@@ -60,6 +60,7 @@ a {
 		&:focus,
 		&:active {
 			color: $color__linksite-title-hover;
+			transition: .5s;
 		}
 	
 		&:focus {
