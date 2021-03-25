@@ -47,30 +47,58 @@
 		<?php
 			if(is_front_page()) : ?>
 <!-- section pour le carrousel -->
-		<section class="carrousel">
-		<?php
-			/* Start the Loop */
-            $precedent = "XXXXXX";
-			while ( have_posts() ) :
-				the_post();
-                $titre = get_the_title();
-				$titrePartiel = substr($titre, 8, -6);
-				$typeCours = get_field('type_de_cours');
-				?>
-
-			<div><a href="<?php echo get_permalink() ?>"><?php echo $titrePartiel; ?></a></div>
-            <?php
-			endwhile;?>
-		</section>
+		<!-- <section class="carrousel-2">
+		<article class="slide__conteneur">
+			<div class = "slide">
+				<img width="150" height="150" src="http://localhost/4w4/wp-content/uploads/2021/03/SV4-150x150.png" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" loading="lazy">
+					<div class="slide__info">
+						<p>Web</p>
+						<a href="http://localhost/4w4/582-3w3-creation-de-sites-web-dynamiques-90h/">Création site web</a>
+						<p>Session : 3</p>
+					</div>
+			</div>
+		</article>
+		<article class="slide__conteneur">
+			<div class = "slide">
+				<img src="" alt="">
+					<div class="slide__info">
+						<p>Web</p>
+						<a href="http://localhost/4w4/582-3w3-creation-de-sites-web-dynamiques-90h/">Création site web</a>
+						<p>Session : 3</p>
+					</div>
+			</div>
+		</article>
+		<article class="slide__conteneur">
+			<div class = "slide">
+				<img src="" alt="">
+					<div class="slide__info">
+						<p>Web</p>
+						<a href="http://localhost/4w4/582-3w3-creation-de-sites-web-dynamiques-90h/">Création site web</a>
+						<p>Session : 3</p>
+					</div>
+			</div>
+		</article>
+		</section> -->
 		<!-- Fin section pour le carrousel -->
-		<?php endif ?>
+		<?php endif ?>	
+
 		<!-- bouton du carrousel -->
+
+		<!-- <section class="ctrl-carrousel">
+		<input class = "rad-carrousel" type="radio" name ="rad-carrousel">
+		<input class = "rad-carrousel" type="radio" name ="rad-carrousel">
+		<input class = "rad-carrousel" type="radio" name ="rad-carrousel">
+		</section> -->
+<!-- 
 		<div class="conteneur-bouton">
 			<div id="un">1</div>
 			<div id="deux">2</div>
 			<div id="trois">3</div>
 		</div>
+-->
 <!-- fin bouton du carrousel -->
+
+
 <!-- bouton burger -->
 		<nav id="site-navigation" class="main-navigation">
 			<button id="menu" class="menu-toggle" aria-controls="primary-menu" aria-expanded="false" onclick="onClickMenu()">

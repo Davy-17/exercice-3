@@ -214,3 +214,70 @@ Stack trace:
 [21-Mar-2021 20:20:49 UTC] PHP Notice:  Undefined variable: titrePartiel in C:\xampp\htdocs\4w4\wp-content\themes\theme-dmp\header.php on line 51
 [21-Mar-2021 20:21:59 UTC] PHP Parse error:  syntax error, unexpected end of file, expecting elseif (T_ELSEIF) or else (T_ELSE) or endif (T_ENDIF) in C:\xampp\htdocs\4w4\wp-content\themes\theme-dmp\header.php on line 98
 [21-Mar-2021 20:22:45 UTC] PHP Parse error:  syntax error, unexpected 'endif' (T_ENDIF) in C:\xampp\htdocs\4w4\wp-content\themes\theme-dmp\header.php on line 69
+[22-Mar-2021 13:21:01 UTC] PHP Parse error:  syntax error, unexpected '&' in C:\xampp\htdocs\4w4\wp-content\themes\theme-dmp\front-page.php on line 29
+[22-Mar-2021 13:22:40 UTC] PHP Fatal error:  Cannot use temporary expression in write context in C:\xampp\htdocs\4w4\wp-content\themes\theme-dmp\front-page.php on line 75
+[22-Mar-2021 13:23:12 UTC] PHP Warning:  Use of undefined constant tPropriete - assumed 'tPropriete' (this will throw an Error in a future version of PHP) in C:\xampp\htdocs\4w4\wp-content\themes\theme-dmp\front-page.php on line 29
+[22-Mar-2021 13:23:12 UTC] PHP Fatal error:  Uncaught Error: Cannot pass parameter 1 by reference in C:\xampp\htdocs\4w4\wp-content\themes\theme-dmp\front-page.php:29
+Stack trace:
+#0 C:\xampp\htdocs\4w4\wp-includes\template-loader.php(106): include()
+#1 C:\xampp\htdocs\4w4\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\4w4\index.php(17): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\4w4\wp-content\themes\theme-dmp\front-page.php on line 29
+[22-Mar-2021 13:25:19 UTC] PHP Warning:  Use of undefined constant tPropriete - assumed 'tPropriete' (this will throw an Error in a future version of PHP) in C:\xampp\htdocs\4w4\wp-content\themes\theme-dmp\front-page.php on line 29
+[22-Mar-2021 13:25:19 UTC] PHP Fatal error:  Uncaught Error: Cannot pass parameter 1 by reference in C:\xampp\htdocs\4w4\wp-content\themes\theme-dmp\front-page.php:29
+Stack trace:
+#0 C:\xampp\htdocs\4w4\wp-includes\template-loader.php(106): include()
+#1 C:\xampp\htdocs\4w4\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\4w4\index.php(17): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\4w4\wp-content\themes\theme-dmp\front-page.php on line 29
+[24-Mar-2021 17:43:08 UTC] PHP Warning:  Une erreur imprévue est survenue. Il pourrait y avoir un problème avec WordPress.org ou la configuration de ce serveur. Si vous continuez à rencontrer ce problème, veuillez vous rendre sur le <a href="https://fr.forums.wordpress.com/">forums d&rsquo;entraide</a> (en anglais). (WordPress n’a pas pu établir de connexion sécurisée vers WordPress.org. Veuillez contacter l’administrateur de votre serveur.) in C:\xampp\htdocs\4w4\wp-includes\update.php on line 173
+[24-Mar-2021 17:43:12 UTC] PHP Fatal error:  Out of memory (allocated 27262976) (tried to allocate 163840 bytes) in C:\xampp\htdocs\4w4\wp-includes\pomo\mo.php on line 297
+[25-Mar-2021 20:39:16 UTC] PHP Parse error:  syntax error, unexpected ':' in C:\xampp\htdocs\4w4\wp-content\themes\theme-dmp\front-page.php on line 36
+[25-Mar-2021 20:39:18 UTC] PHP Parse error:  syntax error, unexpected ':' in C:\xampp\htdocs\4w4\wp-content\themes\theme-dmp\front-page.php on line 36
+[25-Mar-2021 20:39:31 UTC] PHP Parse error:  syntax error, unexpected 'endif' (T_ENDIF) in C:\xampp\htdocs\4w4\wp-content\themes\theme-dmp\front-page.php on line 52
+[25-Mar-2021 20:39:35 UTC] PHP Parse error:  syntax error, unexpected 'endif' (T_ENDIF) in C:\xampp\htdocs\4w4\wp-content\themes\theme-dmp\front-page.php on line 52
+[25-Mar-2021 20:41:20 UTC] PHP Parse error:  syntax error, unexpected 'endif' (T_ENDIF) in C:\xampp\htdocs\4w4\wp-content\themes\theme-dmp\front-page.php on line 52
+[25-Mar-2021 20:42:31 UTC] PHP Parse error:  syntax error, unexpected 'endif' (T_ENDIF) in C:\xampp\htdocs\4w4\wp-content\themes\theme-dmp\front-page.php on line 52
+[25-Mar-2021 20:43:40 UTC] PHP Parse error:  syntax error, unexpected 'endif' (T_ENDIF) in C:\xampp\htdocs\4w4\wp-content\themes\theme-dmp\front-page.php on line 52
+[25-Mar-2021 20:43:47 UTC] PHP Parse error:  syntax error, unexpected 'endif' (T_ENDIF) in C:\xampp\htdocs\4w4\wp-content\themes\theme-dmp\front-page.php on line 52
+[25-Mar-2021 20:44:20 UTC] PHP Parse error:  syntax error, unexpected '$precedent' (T_VARIABLE) in C:\xampp\htdocs\4w4\wp-content\themes\theme-dmp\front-page.php on line 53
+[25-Mar-2021 20:44:42 UTC] PHP Parse error:  syntax error, unexpected 'endif' (T_ENDIF) in C:\xampp\htdocs\4w4\wp-content\themes\theme-dmp\front-page.php on line 52
+[25-Mar-2021 20:57:09 UTC] PHP Notice:  Undefined variable: chaine_bouton_radio in C:\xampp\htdocs\4w4\wp-content\themes\theme-dmp\header.php on line 104
+[25-Mar-2021 21:15:41 UTC] PHP Fatal error:  Cannot redeclare convertirTableau() (previously declared in C:\xampp\htdocs\4w4\wp-content\themes\theme-dmp\front-page.php:65) in C:\xampp\htdocs\4w4\wp-content\themes\theme-dmp\front-page.php on line 83
+[25-Mar-2021 21:22:00 UTC] PHP Parse error:  syntax error, unexpected '<', expecting end of file in C:\xampp\htdocs\4w4\wp-content\themes\theme-dmp\front-page.php on line 77
+[25-Mar-2021 21:27:52 UTC] PHP Fatal error:  Cannot redeclare convertirTableau() (previously declared in C:\xampp\htdocs\4w4\wp-content\themes\theme-dmp\front-page.php:70) in C:\xampp\htdocs\4w4\wp-content\themes\theme-dmp\header.php on line 98
+[25-Mar-2021 21:33:56 UTC] PHP Notice:  Undefined variable: chaine_bouton_radio in C:\xampp\htdocs\4w4\wp-content\themes\theme-dmp\front-page.php on line 29
+[25-Mar-2021 21:34:23 UTC] PHP Notice:  Undefined variable: chaine_bouton_radio in C:\xampp\htdocs\4w4\wp-content\themes\theme-dmp\front-page.php on line 21
+[25-Mar-2021 21:34:49 UTC] PHP Notice:  Undefined variable: chaine_bouton_radio in C:\xampp\htdocs\4w4\wp-content\themes\theme-dmp\front-page.php on line 18
+[25-Mar-2021 21:36:14 UTC] PHP Notice:  Undefined variable: chaine_bouton_radio in C:\xampp\htdocs\4w4\wp-content\themes\theme-dmp\front-page.php on line 18
+[25-Mar-2021 21:36:26 UTC] PHP Notice:  Undefined variable: chaine_bouton_radio in C:\xampp\htdocs\4w4\wp-content\themes\theme-dmp\header.php on line 86
+[25-Mar-2021 21:36:26 UTC] PHP Notice:  Undefined variable: chaine_bouton_radio in C:\xampp\htdocs\4w4\wp-content\themes\theme-dmp\front-page.php on line 18
+[25-Mar-2021 21:36:39 UTC] PHP Notice:  Undefined variable: chaine_bouton_radio in C:\xampp\htdocs\4w4\wp-content\themes\theme-dmp\header.php on line 86
+[25-Mar-2021 21:42:24 UTC] PHP Notice:  Undefined variable: tPropriete in C:\xampp\htdocs\4w4\wp-content\themes\theme-dmp\header.php on line 92
+[25-Mar-2021 21:42:24 UTC] PHP Notice:  Undefined variable: tPropriete in C:\xampp\htdocs\4w4\wp-content\themes\theme-dmp\header.php on line 92
+[25-Mar-2021 21:42:24 UTC] PHP Notice:  Undefined variable: tPropriete in C:\xampp\htdocs\4w4\wp-content\themes\theme-dmp\header.php on line 92
+[25-Mar-2021 21:42:24 UTC] PHP Notice:  Undefined variable: tPropriete in C:\xampp\htdocs\4w4\wp-content\themes\theme-dmp\header.php on line 92
+[25-Mar-2021 21:42:24 UTC] PHP Notice:  Undefined variable: tPropriete in C:\xampp\htdocs\4w4\wp-content\themes\theme-dmp\header.php on line 92
+[25-Mar-2021 21:42:24 UTC] PHP Notice:  Undefined variable: tPropriete in C:\xampp\htdocs\4w4\wp-content\themes\theme-dmp\header.php on line 92
+[25-Mar-2021 21:42:24 UTC] PHP Notice:  Undefined variable: tPropriete in C:\xampp\htdocs\4w4\wp-content\themes\theme-dmp\header.php on line 92
+[25-Mar-2021 21:42:24 UTC] PHP Notice:  Undefined variable: tPropriete in C:\xampp\htdocs\4w4\wp-content\themes\theme-dmp\header.php on line 92
+[25-Mar-2021 21:42:24 UTC] PHP Notice:  Undefined variable: tPropriete in C:\xampp\htdocs\4w4\wp-content\themes\theme-dmp\header.php on line 92
+[25-Mar-2021 21:42:24 UTC] PHP Notice:  Undefined variable: tPropriete in C:\xampp\htdocs\4w4\wp-content\themes\theme-dmp\header.php on line 92
+[25-Mar-2021 21:42:24 UTC] PHP Notice:  Undefined variable: tPropriete in C:\xampp\htdocs\4w4\wp-content\themes\theme-dmp\header.php on line 92
+[25-Mar-2021 21:42:24 UTC] PHP Notice:  Undefined variable: tPropriete in C:\xampp\htdocs\4w4\wp-content\themes\theme-dmp\header.php on line 92
+[25-Mar-2021 21:42:24 UTC] PHP Notice:  Undefined variable: tPropriete in C:\xampp\htdocs\4w4\wp-content\themes\theme-dmp\header.php on line 92
+[25-Mar-2021 21:42:24 UTC] PHP Notice:  Undefined variable: tPropriete in C:\xampp\htdocs\4w4\wp-content\themes\theme-dmp\header.php on line 92
+[25-Mar-2021 21:42:24 UTC] PHP Notice:  Undefined variable: tPropriete in C:\xampp\htdocs\4w4\wp-content\themes\theme-dmp\header.php on line 92
+[25-Mar-2021 21:42:24 UTC] PHP Notice:  Undefined variable: tPropriete in C:\xampp\htdocs\4w4\wp-content\themes\theme-dmp\header.php on line 92
+[25-Mar-2021 21:42:24 UTC] PHP Notice:  Undefined variable: tPropriete in C:\xampp\htdocs\4w4\wp-content\themes\theme-dmp\header.php on line 92
+[25-Mar-2021 21:42:24 UTC] PHP Notice:  Undefined variable: tPropriete in C:\xampp\htdocs\4w4\wp-content\themes\theme-dmp\header.php on line 92
+[25-Mar-2021 21:42:24 UTC] PHP Notice:  Undefined variable: tPropriete in C:\xampp\htdocs\4w4\wp-content\themes\theme-dmp\header.php on line 92
+[25-Mar-2021 21:42:24 UTC] PHP Notice:  Undefined variable: tPropriete in C:\xampp\htdocs\4w4\wp-content\themes\theme-dmp\header.php on line 92
+[25-Mar-2021 21:42:24 UTC] PHP Notice:  Undefined variable: tPropriete in C:\xampp\htdocs\4w4\wp-content\themes\theme-dmp\header.php on line 92
+[25-Mar-2021 21:42:24 UTC] PHP Notice:  Undefined variable: tPropriete in C:\xampp\htdocs\4w4\wp-content\themes\theme-dmp\header.php on line 92
+[25-Mar-2021 21:42:24 UTC] PHP Notice:  Undefined variable: tPropriete in C:\xampp\htdocs\4w4\wp-content\themes\theme-dmp\header.php on line 92
+[25-Mar-2021 21:42:24 UTC] PHP Notice:  Undefined variable: tPropriete in C:\xampp\htdocs\4w4\wp-content\themes\theme-dmp\header.php on line 92
+[25-Mar-2021 21:42:24 UTC] PHP Notice:  Undefined variable: tPropriete in C:\xampp\htdocs\4w4\wp-content\themes\theme-dmp\header.php on line 92
+[25-Mar-2021 21:42:24 UTC] PHP Notice:  Undefined variable: tPropriete in C:\xampp\htdocs\4w4\wp-content\themes\theme-dmp\header.php on line 92

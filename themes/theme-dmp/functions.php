@@ -155,10 +155,12 @@ function theme4w4_scripts() {
     wp_enqueue_script( 'theme4w4-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
 	wp_enqueue_script( 'theme4w4-burger-anim', get_template_directory_uri() . '/js/burger-anim.js', array(), _S_VERSION, true );
     
-    wp_register_script( 'theme4w4-carrousel', get_template_directory_uri() . '/js/carrousel.js', array(), filemtime(get_template_directory() . "/js/carrousel.js"), true );
-    
+    //wp_register_script( 'theme4w4-carrousel', get_template_directory_uri() . '/js/carrousel.js', array(), filemtime(get_template_directory() . "/js/carrousel.js"), true );
+    wp_register_script( 'theme4w4-slider', get_template_directory_uri() . '/js/slider.js', array(), filemtime(get_template_directory() . "/js/slider.js"), true );
+
     if( is_front_page()){
-        wp_enqueue_script( 'theme4w4-carrousel');
+        //wp_enqueue_script( 'theme4w4-carrousel');
+		wp_enqueue_script( 'theme4w4-slider');
     }
     if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
         wp_enqueue_script( 'comment-reply' );
@@ -209,18 +211,3 @@ function extraire_cours_front_page($query){
 }
 }
 add_action('pre_get_posts','extraire_cours_front_page');
-
-/*Fonction pour le carroussel*/ 
-function extraire_cours_header($query){
-	if( !is_admin() && $query->is_header() && $query->is_main_query() ){
-
-	$query->set( 'category_name', 'cours' );
-	$query->set('posts_per_page', 3);
-	$query->set('meta_key', 'type_de_cours');
-	/*$query->set('orderby', 'meta_value');
-	$query->set('order', 'desc');*/
-	$query->set('orderby', array ('meta_value' => 'DESC', 'title' => 'ASC'));
-
-}
-}
-add_action('pre_get_posts','extraire_cours_header');
