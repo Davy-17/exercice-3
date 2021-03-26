@@ -3,6 +3,7 @@ Auteur:Davy Michel-Picard
 Groupe: lundi gr-2
 Description du site: Ce site procure des informations sur le programme d'intégration multimédia du Collège de Maisonneuve
 Lien de la page GitHub: https://github.com/Davy-17
+Lien du site sur webdev: https://e1921866.webdev.cmaisonneuve.qc.ca/design/blogtest/
 
 
 [![Build Status](https://travis-ci.org/Automattic/_s.svg?branch=master)](https://travis-ci.org/Automattic/_s)
