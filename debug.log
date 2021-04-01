@@ -281,3 +281,15 @@ Stack trace:
 [25-Mar-2021 21:42:24 UTC] PHP Notice:  Undefined variable: tPropriete in C:\xampp\htdocs\4w4\wp-content\themes\theme-dmp\header.php on line 92
 [25-Mar-2021 21:42:24 UTC] PHP Notice:  Undefined variable: tPropriete in C:\xampp\htdocs\4w4\wp-content\themes\theme-dmp\header.php on line 92
 [25-Mar-2021 21:42:24 UTC] PHP Notice:  Undefined variable: tPropriete in C:\xampp\htdocs\4w4\wp-content\themes\theme-dmp\header.php on line 92
+[29-Mar-2021 14:33:52 UTC] PHP Parse error:  syntax error, unexpected ''class = "carrousel-2"'' (T_CONSTANT_ENCAPSED_STRING) in C:\xampp\htdocs\4w4\wp-content\themes\theme-dmp\front-page.php on line 50
+[29-Mar-2021 15:42:12 UTC] PHP Parse error:  syntax error, unexpected '*' in C:\xampp\htdocs\4w4\wp-content\themes\theme-dmp\header.php on line 147
+[29-Mar-2021 15:42:33 UTC] PHP Fatal error:  Cannot redeclare convertirTableau() (previously declared in C:\xampp\htdocs\4w4\wp-content\themes\theme-dmp\front-page.php:72) in C:\xampp\htdocs\4w4\wp-content\themes\theme-dmp\header.php on line 155
+[29-Mar-2021 15:44:53 UTC] PHP Notice:  Undefined variable: tPropriete in C:\xampp\htdocs\4w4\wp-content\themes\theme-dmp\header.php on line 49
+[29-Mar-2021 15:45:30 UTC] PHP Fatal error:  Cannot redeclare convertirTableau() (previously declared in C:\xampp\htdocs\4w4\wp-content\themes\theme-dmp\front-page.php:72) in C:\xampp\htdocs\4w4\wp-content\themes\theme-dmp\header.php on line 108
+[29-Mar-2021 15:45:41 UTC] PHP Notice:  Undefined variable: tPropriete in C:\xampp\htdocs\4w4\wp-content\themes\theme-dmp\header.php on line 49
+[29-Mar-2021 15:46:22 UTC] PHP Notice:  Undefined variable: tPropriete in C:\xampp\htdocs\4w4\wp-content\themes\theme-dmp\header.php on line 49
+[29-Mar-2021 16:00:00 UTC] PHP Fatal error:  Cannot redeclare convertirTableau() (previously declared in C:\xampp\htdocs\4w4\wp-content\themes\theme-dmp\front-page.php:68) in C:\xampp\htdocs\4w4\wp-content\themes\theme-dmp\front-page.php on line 86
+[01-Apr-2021 20:14:45 UTC] PHP Notice:  Undefined variable: tPropriete in C:\xampp\htdocs\4w4\wp-content\themes\theme-dmp\header.php on line 50
+[01-Apr-2021 20:18:04 UTC] PHP Fatal error:  Cannot redeclare convertirTableau() (previously declared in C:\xampp\htdocs\4w4\wp-content\themes\theme-dmp\front-page.php:68) in C:\xampp\htdocs\4w4\wp-content\themes\theme-dmp\header.php on line 142
+[01-Apr-2021 20:18:19 UTC] PHP Notice:  Undefined variable: tPropriete in C:\xampp\htdocs\4w4\wp-content\themes\theme-dmp\header.php on line 50
+[01-Apr-2021 20:18:55 UTC] PHP Notice:  Undefined variable: tPropriete in C:\xampp\htdocs\4w4\wp-content\themes\theme-dmp\header.php on line 50

@@ -1,12 +1,13 @@
 .carrousel-2{
     width: 600vw;
-    height: 22vh;
     display: flex;
     transform: translateX(0);
     transition: transform .5s;
     flex-wrap: nowrap !important;
 
     .slide__conteneur{
+        margin-bottom: 1rem;
+        margin-top: 0;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -28,14 +29,16 @@
             }
            
             .slide__info{
+                margin-left: 1rem;
+                margin-right: 1rem;
                 display: flex;
                 flex-direction: column;
                 //text-align: center;
                 p{
-                    font-size: .8rem;
+                    font-size: clamp(.6rem, #{"-0.875rem + 8.333vw"},1rem);
                 }
                     a{
-                        font-size: 1.2rem;
+                        font-size: clamp(.6rem, #{"-0.875rem + 8.333vw"},1rem);
                         text-decoration: none;
                     } 
             }
@@ -46,12 +49,24 @@
              background-color: rgb(6, 169, 245);
          }
          &:nth-of-type(2){
-             background-color: rgb(24, 241, 35);
+            background-color: rgb(0, 150, 125);
          }
          &:nth-of-type(3){
-             background-color: rgb(212, 0, 255);
+            background-color: rgb(0, 167, 103);
              color: white;
          }
+         &:nth-of-type(4){
+             background-color: rgb(108, 77, 245);
+            color: white;
+        }
+        &:nth-of-type(5){
+             background-color: rgb(212, 0, 255);
+            color: white;
+        }
+        &:nth-of-type(6){
+            background-color: rgb(207, 159, 0);
+            color: white;
+        }
 
     }
     

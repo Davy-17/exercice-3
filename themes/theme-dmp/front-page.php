@@ -1,7 +1,4 @@
 
-
-
-
 <?php
 /**
  * The template for displaying archive pages
@@ -11,9 +8,8 @@
  * @package 4w4-theme-dmp
  */
 
-get_header();
+ get_header(); 
 ?>
-
 	<main id="primary" class="site-main">
 	
 
@@ -36,19 +32,20 @@ get_header();
 				the_post();
 				convertirTableau($tPropriete);
                 
-					if ($tPropriete['typeCours'] != $precedent): 
+				if ($tPropriete['typeCours'] != $precedent): 
 						if( "XXXXXX" !=$precedent) :?>
 							</section>
 							<?php if($precedent == "Web") : ?>
-							<section class="ctrl-carrousel"> 
-							<?php echo $chaine_bouton_radio; ?>
-							</section>
+								<div class="ctrl-carrousel"> 
+								<?php echo $chaine_bouton_radio; ?>
+							</div>
 
 							<?php endif; ?>
-					<?php endif; ?>
-						<h2><?php echo $tPropriete['typeCours'] ?></h2>
-						<section <?php echo ($tPropriete['typeCours'] == 'Web'? 'class = "carrousel-2"': ''); ?>>
 						<?php endif; ?>
+
+						<h2><?php echo $tPropriete['typeCours'] ?></h2>
+						<section <?php echo ($tPropriete['typeCours'] == 'Web' ? 'class = "carrousel-2"': ''); ?>>
+				<?php endif; ?>
 						
 							<?php if ($tPropriete['typeCours'] == "Web") : 
 								get_template_part( 'template-parts/content', 'cours-carrousel' );

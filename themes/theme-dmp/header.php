@@ -8,7 +8,7 @@
  *
  * @package 4w4-theme-dmp
  */
-
+global $tPropriete;
 ?>
 <!doctype html>
 <html <?php language_attributes(); ?>>
@@ -44,8 +44,12 @@
 				<p class="site-description"><?php echo $theme_dmp_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
 			<?php endif; ?>
 		</div><!-- .site-branding -->
+		
 		<?php
 			if(is_front_page()) : ?>
+
+
+		<?php endif ?>	
 <!-- section pour le carrousel -->
 		<!-- <section class="carrousel-2">
 		<article class="slide__conteneur">
@@ -80,7 +84,8 @@
 		</article>
 		</section> -->
 		<!-- Fin section pour le carrousel -->
-		<?php endif ?>	
+
+		
 
 		<!-- bouton du carrousel -->
 
@@ -117,3 +122,6 @@
 		</nav><!-- #site-navigation -->
 		<!-- Fin bouton burger -->
 	</header><!-- #masthead -->
+
+
+	
