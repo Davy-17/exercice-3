@@ -15,7 +15,7 @@
 		padding-left: 0;
 		background-color:  rgb(44, 44, 44);
 		text-align: left;
-		
+		z-index: 99999;
 
 		ul {
 			box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
@@ -179,7 +179,7 @@ menu tablette
 	.main-navigation.toggled ul,
 	.main-navigation ul {
 		display: flex;
-		position: static;
+		//position: static;
 		justify-content: space-around;
 		a[href="#"]::after{
 			display: none;
@@ -188,10 +188,11 @@ menu tablette
 			display: none;
 		}
 		li:hover ul{
-			display: block;
-			position: absolute;
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-start;
 			width: 150px;
-			height: 125px;
+			animation: anim-sous-menu .5s both;
 		}
 		li:hover > ul,
 		li.focus > ul {
@@ -225,8 +226,6 @@ menu tablette
 		align-items: center;
 	}
 
-
-	
 }
 
 .comment-navigation,

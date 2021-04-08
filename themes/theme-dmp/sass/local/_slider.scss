@@ -1,5 +1,6 @@
 .carrousel-2{
-    width: 600vw;
+    width: 300vw;
+    height: 30vh;
     display: flex;
     transform: translateX(0);
     transition: transform .5s;
@@ -11,7 +12,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 100vw;
+        width: 50vw;
         .slide{
             width: 100%;
             display: flex;
@@ -45,28 +46,6 @@
 
             
         }
-         &:nth-of-type(1){
-             background-color: rgb(6, 169, 245);
-         }
-         &:nth-of-type(2){
-            background-color: rgb(0, 150, 125);
-         }
-         &:nth-of-type(3){
-            background-color: rgb(0, 167, 103);
-             color: white;
-         }
-         &:nth-of-type(4){
-             background-color: rgb(108, 77, 245);
-            color: white;
-        }
-        &:nth-of-type(5){
-             background-color: rgb(212, 0, 255);
-            color: white;
-        }
-        &:nth-of-type(6){
-            background-color: rgb(207, 159, 0);
-            color: white;
-        }
 
     }
     
@@ -94,7 +73,7 @@ bouton du carrousel
         font-size: clamp(.6rem, #{"-0.875rem + 8.333vw"},1.2rem);
         &:hover{
             background-color: rgb(92, 92, 92);
-            animation: tourneBouton .5s forwards;
+            //animation: tourneBouton .5s forwards;
         }
         &:active{
             background-color: rgb(255, 255, 255);
@@ -111,5 +90,14 @@ bouton du carrousel
     .rad-carrousel{
         display: block;
         margin: .5rem 2rem .5rem 2rem;
+        &:nth-of-type(4){
+            display: none;
+        }
+        &:nth-of-type(5){
+            display: none;
+        }
+        &:nth-of-type(6){
+            display: none;
+        }
     }
 }

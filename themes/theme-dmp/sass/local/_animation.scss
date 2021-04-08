@@ -13,6 +13,22 @@ Animation couleur body
     }
 }
 /*------------------------
+Animation lien du menu
+-------------------------*/
+@keyframes anim-sous-menu{
+	0%{
+		opacity: 0;
+		transform: translateX(0) translateY(50px);
+	}
+	100%{
+		opacity: 1;
+		transform: translateX(0) translateY(0);
+	}
+}
+
+
+
+/*------------------------
 Animation bouton carroussel
 -------------------------*/
 /*
