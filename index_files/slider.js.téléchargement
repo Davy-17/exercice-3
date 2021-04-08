@@ -3,17 +3,25 @@ fonction pour animer le carroussel
 --------------------------------------*/
 
 (function(){
-let bout = document.querySelectorAll('.rad-carrousel')
-let carrousel = document.querySelector('.carrousel-2')
-let k = 0;
-bout[0].checked = true;
-for(const bt of bout)
+    /*Identifier la collection de carrousel*/
+let carrousel = document.querySelectorAll('.carrousel-2')
+let ctrlCarrousel = document.querySelectorAll('.ctrl-carrousel')
+let noCtrlCarrousel = 0;
+for(const elmCarrousel of carrousel)
 {
-    bt.value = k++;
-    bt.addEventListener('mousedown', function(){
-        carrousel.style.transform = "translateX(" + (-this.value*100) + "vw)"
-    })
+   
+   let bout = ctrlCarrousel[noCtrlCarrousel].querySelectorAll('.rad-carrousel')
+   noCtrlCarrousel = noCtrlCarrousel +1;
+   
+   let k = 0;
+   bout[0].checked = true;
+   for(const bt of bout)
+   {
+       bt.value = k++;
+       bt.addEventListener('mousedown', function(){
+        elmCarrousel.style.transform = "translateX(" + (-this.value*100) + "vw)"
+       })
+   }
 }
-
 
 }())

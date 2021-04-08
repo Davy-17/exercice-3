@@ -727,6 +727,7 @@ textarea {
   padding-left: 0;
   background-color: #2c2c2c;
   text-align: left;
+  z-index: 99999;
   /* Fin du sub menu */
 }
 
@@ -856,7 +857,6 @@ menu tablette
   .main-navigation.toggled ul,
   .main-navigation ul {
     display: flex;
-    position: static;
     justify-content: space-around;
   }
   .main-navigation.toggled ul a[href="#"]::after,
@@ -869,10 +869,11 @@ menu tablette
   }
   .main-navigation.toggled ul li:hover ul,
   .main-navigation ul li:hover ul {
-    display: block;
-    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
     width: 150px;
-    height: 125px;
+    animation: anim-sous-menu .5s both;
   }
   .main-navigation.toggled ul li:hover > ul,
   .main-navigation.toggled ul li.focus > ul,
@@ -1196,7 +1197,7 @@ body.home::after {
 Header
 -------------------------*/
 .site-title {
-  font-family: "Monserrat", monospace;
+  font-family: "Montserrat", monospace;
   font-weight: bold;
   font-size: clamp(4rem, -0.875rem + 8.333vw, 6rem);
   margin-top: 0;
@@ -1212,7 +1213,7 @@ Header
   margin-top: 0;
   margin-bottom: 0;
   margin-left: 3.5rem;
-  font-family: "Monserrat", monospace;
+  font-family: "Montserrat", monospace;
   font-weight: normal;
   font-size: clamp(0.6rem, -0.875rem + 8.333vw, 2rem);
 }
@@ -1239,47 +1240,27 @@ img {
 /*----------------------------------------------
 Couleur grille 
 ------------------------------------------------*/
-.cours section:nth-of-type(2) {
-  margin-left: 2.5rem;
-}
-
-.cours section:nth-of-type(2) article {
+.cours section:nth-of-type(1) article {
   background: #1b1b1c;
   background: linear-gradient(52deg, #1b1b1c 0%, #1ad2cf 0%, #003270 53%, black 53%, #3f3f3f 100%);
 }
 
-.cours section:nth-of-type(3) {
-  margin-left: 2.5rem;
-}
-
-.cours section:nth-of-type(3) article {
+.cours section:nth-of-type(2) article {
   background: #1b1b1c;
   background: linear-gradient(52deg, #1b1b1c 0%, #8a2bcf 0%, #1f0070 53%, black 53%, #3f3f3f 100%);
 }
 
-.cours section:nth-of-type(4) {
-  margin-left: 2.5rem;
-}
-
-.cours section:nth-of-type(4) article {
+.cours section:nth-of-type(3) article {
   background: #1b1b1c;
   background: linear-gradient(52deg, #1b1b1c 0%, #d21ac0 0%, #700024 53%, black 53%, #3f3f3f 100%);
 }
 
-.cours section:nth-of-type(5) {
-  margin-left: 2.5rem;
-}
-
-.cours section:nth-of-type(5) article {
+.cours section:nth-of-type(4) article {
   background: #1b1b1c;
   background: linear-gradient(52deg, #1b1b1c 0%, #cfcd2b 0%, #703300 53%, black 53%, #3f3f3f 100%);
 }
 
-.cours section:nth-of-type(6) {
-  margin-left: 2.5rem;
-}
-
-.cours section:nth-of-type(6) article {
+.cours section:nth-of-type(5) article {
   background: #1b1b1c;
   background: linear-gradient(52deg, #1b1b1c 0%, red 0%, #702b00 53%, black 53%, #3f3f3f 100%);
 }
@@ -1468,6 +1449,20 @@ Animation couleur body
 }
 
 /*------------------------
+Animation lien du menu
+-------------------------*/
+@keyframes anim-sous-menu {
+  0% {
+    opacity: 0;
+    transform: translateX(0) translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0) translateY(0);
+  }
+}
+
+/*------------------------
 Animation bouton carroussel
 -------------------------*/
 /*
@@ -1482,7 +1477,7 @@ Animation bouton carroussel
 /* slider
 -------------------------------*/
 .carrousel-2 {
-  width: 600vw;
+  width: 300vw;
   display: flex;
   transform: translateX(0);
   transition: transform .5s;
@@ -1495,21 +1490,19 @@ Animation bouton carroussel
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100vw;
+  width: 50vw;
 }
 
 .carrousel-2 .slide__conteneur .slide {
   width: 100%;
-  display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-}
-
-@media (min-width: 600px) {
-  .carrousel-2 .slide__conteneur .slide {
-    width: 60%;
-  }
+  /*  @include tablet{
+                &{
+                    width: 60%;
+                }
+            }*/
 }
 
 .carrousel-2 .slide__conteneur .slide img {
@@ -1531,34 +1524,6 @@ Animation bouton carroussel
 .carrousel-2 .slide__conteneur .slide .slide__info a {
   font-size: clamp(0.6rem, -0.875rem + 8.333vw, 1rem);
   text-decoration: none;
-}
-
-.carrousel-2 .slide__conteneur:nth-of-type(1) {
-  background-color: #06a9f5;
-}
-
-.carrousel-2 .slide__conteneur:nth-of-type(2) {
-  background-color: #00967d;
-}
-
-.carrousel-2 .slide__conteneur:nth-of-type(3) {
-  background-color: #00a767;
-  color: white;
-}
-
-.carrousel-2 .slide__conteneur:nth-of-type(4) {
-  background-color: #6c4df5;
-  color: white;
-}
-
-.carrousel-2 .slide__conteneur:nth-of-type(5) {
-  background-color: #d400ff;
-  color: white;
-}
-
-.carrousel-2 .slide__conteneur:nth-of-type(6) {
-  background-color: #cf9f00;
-  color: white;
 }
 
 /*------------------------------------
@@ -1588,7 +1553,6 @@ bouton du carrousel
 
 .conteneur-bouton div:hover {
   background-color: #5c5c5c;
-  animation: tourneBouton .5s forwards;
 }
 
 .conteneur-bouton div:active {
@@ -1607,5 +1571,17 @@ bouton du carrousel
 .ctrl-carrousel .rad-carrousel {
   display: block;
   margin: .5rem 2rem .5rem 2rem;
+}
+
+.ctrl-carrousel .rad-carrousel:nth-of-type(4) {
+  display: none;
+}
+
+.ctrl-carrousel .rad-carrousel:nth-of-type(5) {
+  display: none;
+}
+
+.ctrl-carrousel .rad-carrousel:nth-of-type(6) {
+  display: none;
 }
 /*# sourceMappingURL=style.css.map */
