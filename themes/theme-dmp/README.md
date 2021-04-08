@@ -1,4 +1,4 @@
-Markup :  # Info Importante #
+Markup :  # Information importantes #
 Titre:Mon premier TP en conception d'interface et développement web
 Auteur:Davy Michel-Picard
 Groupe: lundi gr-2
