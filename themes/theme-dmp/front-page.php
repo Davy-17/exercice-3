@@ -46,7 +46,7 @@
 						<?php endif; ?>
 
 						<h2><?php echo $tPropriete['typeCours'] ?></h2>
-						<section <?php echo (in_array($tPropriete['typeCours'], ['Web','Spécifique', 'Jeu', 'Image 2d/3d', 'Conception']) ? 'class = "carrousel-2"': ''); ?>>
+						<section <?php echo (in_array($tPropriete['typeCours'], ['Web','Spécifique', 'Jeu', 'Image 2d/3d', 'Conception']) ? 'class = "carrousel-2"':'class = "bloc"'); ?>>
 				<?php endif; ?>
 						
 							<?php if (in_array($tPropriete['typeCours'], ['Web', 'Spécifique','Jeu', 'Image 2d/3d', 'Conception']) ) : 

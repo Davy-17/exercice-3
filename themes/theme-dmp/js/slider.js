@@ -10,8 +10,7 @@ let noCtrlCarrousel = 0;
 for(const elmCarrousel of carrousel)
 {
    
-   let bout = ctrlCarrousel[noCtrlCarrousel].querySelectorAll('.rad-carrousel')
-   noCtrlCarrousel = noCtrlCarrousel +1;
+   let bout = ctrlCarrousel[noCtrlCarrousel++].querySelectorAll('.rad-carrousel')
    
    let k = 0;
    bout[0].checked = true;

@@ -36,11 +36,18 @@
                 flex-direction: column;
                 //text-align: center;
                 p{
+                    color: rgb(255, 255, 255);
                     font-size: clamp(.6rem, #{"-0.875rem + 8.333vw"},1rem);
                 }
                     a{
+                        color: rgb(207, 221, 84);
                         font-size: clamp(.6rem, #{"-0.875rem + 8.333vw"},1rem);
                         text-decoration: none;
+                        &:hover{
+                            color: rgb(255, 255, 255);
+                            transform: scale(.9);
+                            transition: .5s ease-in-out;
+                        }
                     } 
             }
 

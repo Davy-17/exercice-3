@@ -1,7 +1,6 @@
 body{
-    height : 500vh;
+    height : 120vh;
     width : 100vw;
-
     margin: 0;
     padding: 0;
     //background-color: #00d599;
@@ -23,7 +22,7 @@ Clip-path body
 body.home::after{
 position: absolute;
 width: 100%;
-height: 500vh;
+height: 120vh;
 content: "";
 top: 0;
 bottom: 0;
@@ -133,7 +132,7 @@ Grille
         text-align: center;
         font-size: clamp(.6rem, #{"-0.875rem + 8.333vw"},1.5rem);
     }
-    section{
+    section.bloc{
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -147,21 +146,14 @@ Grille
         margin: 1%;
 
         p{
-            color: rgb(255, 255, 255);
             margin: .4rem;
             font-size: clamp(.6rem, #{"-0.875rem + 8.333vw"},1rem);
         }
         a{
-            color: rgb(207, 221, 84);
             font-size: clamp(.6rem, #{"-0.875rem + 8.333vw"},1.5rem);
             font-weight: bold;
             text-decoration: none;
             text-align: center;
-            &:hover{
-                color: rgb(255, 255, 255);
-                transform: scale(.9);
-                transition: .5s ease-in-out;
-            }
         }
     }
 
