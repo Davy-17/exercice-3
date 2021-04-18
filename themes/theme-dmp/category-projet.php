@@ -20,18 +20,32 @@ get_header();
 				the_archive_description( '<div class="archive-description">', '</div>' );
 				?>
 			</header><!-- .page-header -->
-
+			<section class="galerie">
 			<?php
 			/* Start the Loop */
 			while ( have_posts() ) :
-				the_post();
-				the_post_thumbnail('thumbnail');
+				the_post();?>
+			<div class="carte">
+				<div class="avant">
+					<div class ="image">
+					<?php  the_post_thumbnail('thumbnail');?>
+					</div>
+				</div>
+					<div class="arriere">
+					<div class="info">
+						<h2><?php the_title(); ?></h2>
+						<p><?php echo get_the_content(); ?></p>
+						<a href=""></a>
+					</div>
+					</div>
+			</div>
 
-			endwhile;
+				<?php endwhile;?>
+			</section>
 
-		endif;
-		?>
-
+			<?php endif; ?>
+		
+			
 	</main><!-- #main -->
 
 <?php

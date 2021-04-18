@@ -198,6 +198,11 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
+
+
+////////// categorie projet
+
+
 function extraire_cours($query){
 	if ($query->is_category('cours'))
 	{

@@ -1236,7 +1236,6 @@ Liens
 
 img {
   display: block;
-  border-radius: 50%;
 }
 
 /*----------------------------------------------
@@ -1411,7 +1410,7 @@ Animation bouton carroussel
 /* slider
 -------------------------------*/
 .carrousel-2 {
-  width: 300vw;
+  width: 600vw;
   height: 30vh;
   display: flex;
   transform: translateX(0);
@@ -1425,7 +1424,7 @@ Animation bouton carroussel
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 50vw;
+  width: 100vw;
 }
 
 .carrousel-2 .slide__conteneur .slide {
@@ -1518,15 +1517,105 @@ bouton du carrousel
   margin: .5rem 2rem .5rem 2rem;
 }
 
-.ctrl-carrousel .rad-carrousel:nth-of-type(4) {
-  display: none;
+@media (min-width: 600px) {
+  .carrousel-2 {
+    width: 300vw;
+  }
+  .carrousel-2 .slide__conteneur {
+    width: 50vw;
+  }
+  .rad-carrousel:nth-of-type(4) {
+    display: none;
+  }
+  .rad-carrousel:nth-of-type(5) {
+    display: none;
+  }
+  .rad-carrousel:nth-of-type(6) {
+    display: none;
+  }
 }
 
-.ctrl-carrousel .rad-carrousel:nth-of-type(5) {
-  display: none;
+@media (min-width: 1200px) {
+  .carrousel-2 {
+    width: 200vw;
+  }
+  .carrousel-2 .slide__conteneur {
+    width: 33.33vw;
+  }
+  .rad-carrousel:nth-of-type(3) {
+    display: none;
+  }
+  .rad-carrousel:nth-of-type(4) {
+    display: none;
+  }
+  .rad-carrousel:nth-of-type(5) {
+    display: none;
+  }
+  .rad-carrousel:nth-of-type(6) {
+    display: none;
+  }
 }
 
-.ctrl-carrousel .rad-carrousel:nth-of-type(6) {
-  display: none;
+/* Galerie
+-------------------------------*/
+.galerie {
+  display: flex;
+  flex-wrap: wrap;
+  /*Animation des cartes*/
+}
+
+.galerie .carte {
+  width: 150px;
+  height: 150px;
+  margin: 5%;
+  cursor: pointer;
+}
+
+.galerie .carte .avant {
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  backface-visibility: hidden;
+  position: absolute;
+  transform: perspective(600px) rotateY(0deg);
+  transition: transform .6s;
+}
+
+.galerie .carte .avant .image {
+  width: 150px;
+  height: 150px;
+}
+
+.galerie .carte .arriere {
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  backface-visibility: hidden;
+  position: absolute;
+  background: white;
+  transform: perspective(600px) rotateY(180deg);
+  transition: transform .6s;
+}
+
+.galerie .carte .arriere .info {
+  position: absolute;
+  margin-left: 5%;
+}
+
+.galerie .carte .arriere .info h2 {
+  font-size: clamp(0.6rem, -0.875rem + 8.333vw, 0.9rem);
+}
+
+.galerie .carte .arriere .info p {
+  margin: 0;
+  font-size: clamp(0.6rem, -0.875rem + 8.333vw, 0.7rem);
+}
+
+.galerie .carte:hover > .avant {
+  transform: perspective(600px) rotateY(-180deg);
+}
+
+.galerie .carte:hover > .arriere {
+  transform: perspective(600px) rotateY(0deg);
 }
 /*# sourceMappingURL=style.css.map */
